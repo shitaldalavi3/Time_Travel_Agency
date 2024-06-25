@@ -16,7 +16,9 @@ float: left;
 border-radius: 50%;
 }
 header{
-background-color: lightcoral;
+    display: flex;
+    justify-content: left;
+    background-color:lightcyan;
 }
 
 /* END header css*/
@@ -49,11 +51,16 @@ div.desc{
 }
 
 /*END main css*/
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+}
 
 /*START footer css*/
 footer
 {
-    font-size:smaller;
+    font-size:x-small;
     text-align: center;
     background-color:lightcyan;
     padding: 10px;;
